@@ -1,0 +1,58 @@
+1. What is java?
+    Java is a class-based , object-oriented programmimg language
+2. why we are using java?
+    java is associated with the term called WORA means (write once run anywhere)  means if we write a code in one platform we can run that code in any platform. The intention of using this language is to give relief to the developers from writing code for every platform.
+3. Java language was developed in the year 1995.
+4. Features of java:
+  -> simple - java is very easy to learn and its syntax is simple 
+              java syntax is based on c++
+  -> object-oriented - java is an object-oriented language
+                       Everything in java is an object. we organize our software as a combination of different types of objects.
+  -> platform-independent - Java is platform-independent it is different from other langauges like c,c++. 
+                            Java code can be executed on multiple platforms for example windows,linux,mac/os.
+                            java code is compiled by the compiler and coverted into the bytecode.
+                            This bytecode can run on multiplke platforms.
+  -> portable - Java is portable because it facilitates you to carry the byte code to any platform.
+  -> secured  - java is secured, with java we can develop virus-free systems. It is secured because:
+                                                                              -> No explicit pointer
+                                                                              -> java programs run inside the virtual machine 
+  -> Robust  - robust means strong. Java is robust because:
+                                    -> it has strong memory management
+                                    -> it has automatic garbage collection runs on JVM it collects the unwanted objects which are not being used by java anymore.
+                                    -> they are exception handling and type checking mechanisms in java.
+  -> High-performance - java is faster than other interpreted languages and slower than compiled langauge.
+                        Because java is interpreted language.
+  -> dynamic - java is a dynamic language. It supports dynamic loading of classes means classes are loaded on demand.
+5. Installation of java : -> search "download jdk"
+                          -> if you want to install java on windows, click on windows
+                          -> click on x64 installer and download it
+   after download and installation completed we have to add the directory to the path:
+                          -> go to the directory where you have installed-> go to program files-> go to java folder-> go to java version file -> go to bin folder->copy the directory path of this folder
+                          -> go to control panel->go to system and security->click system->click advanced system settings->click environment variables->under system varaibles select the path and click Edit->click new->
+                             a blank box will appear->paste the directory path
+                          ->click ok
+6. Structure of the program:
+                 class class-name{
+                 public static void main(String args[])
+                 {
+                    // body of the program
+                 }
+   For compilation : javac file_name.java(file name should be same as class name)
+   For Execution   : java file_name
+   example: program to print hello world
+            class Sample
+            {
+              public static void main(String args[])
+              {
+                System.out.println("Hello World");
+               }
+             }
+7. Single line comments: //
+8. Multi-line comments : /* */
+9. What is JVM?
+      JVM means Java virtual machine is an abstract machine. It provides runtime environment in which java bytecode can be executed.
+      it performs following operations:
+          ->loads code
+          ->verifies code
+          ->executes code
+          ->provides runtime environment
