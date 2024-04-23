@@ -1,0 +1,33 @@
+1.Taking Input from user in java?
+    There are 2 ways to take input from the user in java
+        * Scanner class : By using Scanner class we can read the input from the user by creating the scanner object and use any of the available methods in Scanner 
+                          it belongs to the java.util package
+          Syntax : 
+                 Scanner sc=new Scanner(System.in); // here sc->scanner object. now we created a scanner object
+                 int a=sc.nextInt();                // this is the syntax of the scanner class
+
+          To read different types of input types we have different methods
+          integer value        -  nextInt()
+          float   value        -  nextFloat()
+          double  value        -  nextDouble()
+          string  value        -  nextLine()
+          boolean value        -  nextBoolean()
+          short   value        -  nextShort()
+          long    value        -  nextLong()    
+        
+      Example : program
+            import java.util.*;
+            public class Example
+           {
+               public static void main(String args[])
+               {
+                   Scanner sc=new Scanner(System.in); // here system.in is standard input stream
+                   System.out.println("enter 1st number");
+                   int a=sc.nextInt();
+                   System.out.println("enter 2nd number");
+                   int b=sc.nextInt();
+                   int c=a+b;
+                   System.out.println(c);
+        
+                }
+            }  

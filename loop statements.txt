@@ -1,0 +1,73 @@
+1. Loop statements:
+       when we use the looping statements?
+            -> sometimes we need to execute the block of code repeatedly  when the condition is true then these loop statements are used
+            -> In java, they are 3 looping statements:
+                   * for : In for loop they are 3 parameters 
+                           for(Initialization,condition,increment/decrement)
+                           Intialization : it initializes the loop varaible
+                           condition     : it checks the condition
+                           increment/decrement : it increments/decrements the value of a varaible in a single line of code
+                         Syntax of for loop:
+                              for(Initialization,condition,increment/decrement)
+                              {
+                                  //block of code
+                              }
+                         examples : program to check whether the number is prime or not?
+                                    program to find sum of n natural numbers?
+
+                         Example : program
+                              public class Example5
+                               {
+                                  public static void main(String args[])
+                                  {
+                                     for(int i=0;i<5;i++)
+                                     {
+                                        System.out.println(i);
+                                      }
+                                   }
+                                 }
+                         
+                   * while : the while loop is also used to iterate over number of statements and here we dont know number of iterations in advance 
+                          Syntax of while loop:
+                               while(condition)
+                               {
+                                   //block of code
+                               }
+                          examples : program to find the sum of digits of a number
+                                     program to check whether the given number is palindrome or not?
+                                     program to find reverse of a number 
+ 
+                          Example : program
+                               public class Example6
+                               {
+                                  public static void main(String args[])
+                                  {
+                                     int i=0;
+                                     while(i<5)
+                                     {
+                                       System.out.println(i);
+                                       i++;
+                                      }
+                                    }
+                                  }
+                   * do-while : the do-while loop is also used to iterate the part of the program repeatedly until the condition is true 
+                                the do-while loop executes the code once despite of the condition because in do-while the conditon is checked at the end of program
+                             Syntax of do-while loop:
+                                  do
+                                  {
+                                     //block of code
+                                  }while(condition)
+                             Example : program
+                                  public class Example7
+                                 {
+                                    public static void main(String args[])
+                                    {
+                                       int i=1;
+                                       do
+                                       {
+                                         System.out.println(i);
+                                         i++;
+                                       }while(i<=5);
+                                     }
+                                   }
+               

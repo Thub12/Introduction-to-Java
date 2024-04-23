@@ -1,0 +1,186 @@
+1.control flow statements?
+     -> java provides 3 types of control flow statements
+          *Decision-making statements:
+          *Loop statements
+          *Jump statements
+        
+        * Decision-making statements: what it means? means these statements decide which statement should be executed and when.
+                                      They are 2 types of Decision-making statements:
+                                      ->if : in  java if statement they are 4 types of if statements:
+
+                                             ->if:this is the basic statement if the given condition is true then it executes the block of code
+
+                                                  Syntax of if statement:
+                                                          if(condition){
+                                                                statement1 // executes when the condition is true
+                                                            }
+
+                                                  Example:program
+                                                  class Example1
+                                                  {
+                                                     public static void main(String args[])
+                                                     {
+                                                       int a=10;
+                                                       int b=20;
+                                                       if(a<b)
+                                                       {
+                                                          System.out.println("yes");
+                                                        }
+                                                      }
+                                                   }
+
+                                             ->if-else: this statement is the extension of if statement it adds additional block i.e else block it executes when the if block is false
+
+                                                        Syntax of if-else statement:
+                                                                if(condition){
+                                                                    statement1 // executes when condition is true
+                                                                  }
+                                                                else{
+                                                                    statement2// executes when condition is false
+                                                                  }
+
+                                                        Example:program
+                                                        class Example2
+                                                        {
+                                                          public static void main(String args[])
+                                                          {
+                                                            int a=10;
+                                                            int b=20;
+                                                            if(a<b)
+                                                           {
+                                                              System.out.println("yes");// it prints the statement if condition is true
+                                                           }
+                                                           else{
+                                                                System.out.println("no");// it prints the statement if condition is false
+                                                           }
+                                                         }
+                                                       }
+
+                                             ->if-else-if ladder: it is the chain of if-else statements they are multiple else-if statements and there is an else  statement at the end of the chain
+ 
+                                                          Syntax of if-else-if statement:
+                                                                  if(condition1){
+                                                                      statement1 // it executes when condition1 is true
+                                                                     }
+                                                                  else if(condition2){
+                                                                      statement2 // it executes when condition2 is true
+                                                                     }
+                                                                  else{
+                                                                      statement3 // it executes when all conditions are false 
+                                                                     }
+                             
+                                                          Example:program: Greatest among 3 numbers
+                                                          class Example3
+                                                          {
+                                                            public static void main(String args[])
+                                                            {
+                                                              int a=10;
+                                                              int b=20;
+                                                              int c=30;
+                                                              if(a>b && a>c)
+                                                              {
+                                                                 System.out.println("a is greater");
+                                                              }
+                                                              else if(b>a && b>c)
+                                                              {
+                                                                 System.out.println("b is greater");
+                                                              }
+                                                              else
+                                                              {
+                                                                 System.out.println("c is greater");
+                                                              }
+                                                            }
+                                                          }
+                                             ->nested if : nested means with-in that means if statement within another if
+                              
+                                                       Syntax of nested-if statement:
+                                                                if(condition1){
+                                                                    statement1  // it executes when condition 1 is true
+                                                                if(condition2){
+                                                                    statement2  // it executes when condition2 is true
+                                                                  }
+                                                                else{
+                                                                    statement2  // it executes when condition2 is false
+                                                                }
+                                                               }
+                
+                                                       Example:program : Grade marks for students
+                                                       class Example3
+                                                       {
+                                                         public static void main(String args[]) 
+                                                         {
+                                                           int percentage=75;
+                                                           if(percentage>=90)
+                                                           {
+                                                               System.out.println("Grade A");
+                                                           }
+                                                           else
+                                                           {
+                                                             if(percentage>=80 && percentage<=89)
+                                                             {
+                                                                System.out.println("Grade B");
+                                                             }
+                                                             else
+                                                             {
+                                                              if(percentage>=60 && percentage<=79)
+                                                              {
+                                                                 System.out.println("Grade C");
+                                                              }
+                                                             else
+                                                             {
+                                                               if(percentage>=33 && percentage<=60)
+                                                              {
+                                                                 System.out.println("Grade D");
+                                                              }
+                                                              else
+                                                              {
+                                                                 System.out.println("Grade F");
+                                                              }
+                                                            }
+                                                          }
+                                                         }
+                                                        }
+                                                       }
+
+
+                                      ->switch : switch statement is similiar to if-else-if statement and 
+                                                 the switch statement has multiple blocks of code and they are called cases and one case is executed based on the varaible which is being switched 
+                                                 the switch statement is easier to use instead of if-else-if 
+                                               Syntax of switch statement:
+                                                         switch(expression){
+                                                            case 1:
+                                                                 statement 1;
+                                                                 break;
+                                                             case 2:
+                                                                 statement 2;
+                                                                 break;
+                                                             .
+                                                             .
+                                                             .
+                                                              case N:
+                                                                 statement N;
+                                                                 break;
+                                                              default:
+                                                                 statement
+                                                           }
+
+                                                 Example:program
+                                                 class Example4
+                                                 {
+                                                   public static void main(String args[])
+                                                   {
+                                                      int num=1;
+                                                      switch(num)
+                                                      {
+                                                         case 0:
+                                                            System.out.println("the number is 0");
+                                                         case 1:
+                                                            System.out.println("the number is 1");
+                                                         default:
+                                                            System.out.println(num);
+                                                       }
+                                                     }
+                                                   }
+
+
+         

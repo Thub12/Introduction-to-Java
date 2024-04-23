@@ -1,0 +1,70 @@
+1. Jump statements : break,continue
+        -> break : in java break statement is used to break the loop it breaks the current flow of the program at specific condition
+                 Syntax of break statement:
+                           break;
+                 Example : program
+                         public class Example8
+                         {
+                            public static void main(String args[])
+                            {
+                                for(int i=1;i<=10;i++)
+                                {
+                                   if(i==9)
+                                      break; // means it breaks the flow of program at specific condition that means it prints from 1 to 8
+                                   System.out.println(i);
+                                 }
+                               }
+                             }
+             -> continue : in Java continue statement is used to continue the flow of the program and skips the code at specific condition.
+                        Syntax of continue statement:
+                                  continue;
+                        Example : program
+                                public class Example9
+                                {
+                                   public static void main(String args[])
+                                   {
+                                      for(int i=0;i<=10;i++)
+                                      {
+                                         if(i==5)
+                                             continue;  // means it prints all the numbers from 1 to 10 except 5 
+                                         System.out.println(i);
+                                       }
+                                     }
+                                   }
+
+2. Comments : 
+         what is a comment?
+               comment is a statement of program that is not executed by the compiler.
+         what is the use of comments?
+               by using the comments we can understand the code easily and it provides the information about varaibles,classes or any statements
+               they are 2 types of comments:
+               * single-line comments : single line comments are used for only for the single line code
+                                        It is denoted as (//)two forward slashes 
+                                  Example : program
+                                  public class Example10
+                                  {
+                                     public static void main(String args[])
+                                     {
+                                          int a=10,b=20;
+                                          int c=a+b; // adding a and b and it stores the value in varaible c
+                                          System.out.println(c);
+                                      }
+                                    }
+                                          
+               * multi-line comments : multi line comments are used for multiple lines of code
+                                       It is denoted by (/* */)
+                                  Example : program
+                                  public class Example11
+                                  {
+                                     public static void main(String args[])
+                                     {
+                                          /* int a=30;
+                                             int b=40;
+                                             int c=a+b;*/
+                                          int a=10,b=20;
+                                          int c=a+b; 
+                                          System.out.println(c);
+                                      }
+                                    }
+
+                    
