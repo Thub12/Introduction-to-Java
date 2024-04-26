@@ -1,0 +1,88 @@
+1. Strings : 
+       what is a string?
+             -> String is a collection of characters enclosed with double quotes. string is immutable that means it cannot be changed  
+             -> we can create string in 2 ways:
+                      -> by using string literal
+                       Syntax of string:
+                       String varaible_name="geeks for geeks";
+                       Example: program
+                       public class Example
+                      {
+                         public static void main(String args[])
+                        {
+                           String str="leet code"; // declaration of string by using literal
+                           System.out.println(str);
+                         }
+                       }
+                     -> by using new keyword
+                        Syntax of string:
+                        String varaible_name= new String("text");
+                        Example: program
+                       public class Example
+                      {
+                         public static void main(String args[])
+                        {
+                           String str=new String("Hello World");// declaration of string by using new keyword
+                           System.out.println(str);
+                         }
+                       }
+
+              -> methods of strings:
+                 length()          -  to find the length of string
+                        Example: program
+                        public class Example
+                      {
+                         public static void main(String args[])
+                        {
+                           String str="leet code"; // declaration of string
+                           System.out.println(str.length()); // it prints the length of the string
+                         }
+                       }
+
+                 toUpperCase()     -  to change the text in to upper case letters
+                          Example: program
+                          public class Example
+                         {
+                         public static void main(String args[])
+                        {
+                           String str="leet code"; // declaration of string
+                           System.out.println(str.toUpperCase()); // it prints the string in upper case letters
+                         }
+                       }
+
+                 toLowerCase()     -  to change the text in to lower case letters
+                           Example: program
+                           public class Example
+                         {
+                         public static void main(String args[])
+                        {
+                           String str="LEet coDE"; // declaration of string
+                           System.out.println(str.toLowerCase()); // it prints the string in lower case letters
+                         }
+                       }
+
+  
+              -> String concatenation : used to concatenate the two strings
+                                        concatenation will be done by 2 ways:
+                                      ->by using "+" operator we can concatenate two strings
+                                        Example : program
+                                        public class Example
+                                      {
+                                         public static void main(String args[])
+                                         {
+                                             String str="Hello";
+                                             String str1="World";
+                                             System.out.println(str+" "+str1);
+                                          }
+                                        }
+                                     ->by using "concat()" method also we can concatenate two strings
+                                       Example: program
+                                        public class Example
+                                      {
+                                         public static void main(String args[])
+                                         {
+                                             String str="Hello";
+                                             String str1="World";
+                                             System.out.println(str.concat(str1));
+                                          }
+                                        }

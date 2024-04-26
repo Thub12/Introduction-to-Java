@@ -1,0 +1,164 @@
+1. Inheritance in java: Inheritance is a mechanism where one class is inherited from another class 
+                        most important topic in oops
+                        It also provide code reusability
+    
+      -> single     Inheritance
+      -> multi-level Inheritance
+      -> Hierarchical Inheritance
+      -> multiple     Inheritance
+      -> Hybrid       Inheritance
+
+ ->  Single Inheritance : means a class is inherited from another class
+            Example : program
+import java.util.*;
+class Animal
+{
+    public void show()
+    {
+        System.out.println("Animal class created");
+    }
+
+}
+ class Dog extends Animal
+{
+    public void showd()
+    {
+        System.out.println("Dog class created");
+    }
+    
+}
+public class SingleInheritance
+{
+    public static void main(String args[])
+    {
+        Dog d=new Dog();
+        d.showd();
+        d.show();
+    }
+}
+
+-> Multilevel Inheritance : means one class is derived from another class(sub-class) and that class is derived from another class(base-class)
+              Example : program
+ import java.util.*;
+class Animal
+{
+    public void show()
+    {
+        System.out.println("Animal class created");
+    }
+
+}
+ class Dog extends Animal
+{
+    public void showd()
+    {
+        System.out.println("Dog class created");
+    }
+    
+}
+class BabyDog extends Dog{     // it is inherited from class Dog
+       public void showbd()
+       {
+        System.out.println("BabyDog class created");
+       }
+}
+public class MultilevelInheritance
+{
+    public static void main(String args[])
+    {
+        BabyDog d=new BabyDog();
+        d.showbd();
+        d.showd();
+        d.show();
+    }
+}
+            
+-> Hierarchical Inheritance : means if two or more classes are dervied from one class(base-class)
+                Example : program
+import java.util.*;
+class Animal
+{
+    public void show()
+    {
+        System.out.println("Animal class is created");
+    }
+}
+class Dog extends Animal
+{
+    public void showd()
+    {
+        System.out.println("Dog class is created");
+    }
+}
+class Cat extends Animal
+{
+    public void showc()
+    {
+        System.out.println("Cat class is created");
+    }
+}
+public class HierarchicalInheritance
+{
+    public static void main(String args[])
+    {
+        Cat c=new Cat();
+        c.showc();
+        c.show();
+        //c.showd();
+        Dog d=new Dog();
+        d.showd();
+        d.show();
+    }
+}
+
+-> Multiple Inheritance : means if one class is inherited from more than one class is called Multiple Inheritance
+                          It is not supported through classes in java because of ambiguity problem(means it is like confusion). It supports through interfaces in java
+                          Consider a scenario that we have 3 classes A,B,C and C class is inherited from both A and B. so if A and B have same method show() so if we create a object for C class and if we call show() method.
+                          then it arises ambiguity problem which method should be invoked.it will give compile time error even if they are not having same methods also it give compile time error
+->Hybrid Inheritance : Hybrid means mixture. It is a combination of two or more types of inheritance.
+         Example : program
+import java.util.*;
+class GrandFather
+{
+    public void showgf()
+    {
+        System.out.println("GrandFather class created");
+    }
+}
+class Father extends GrandFather
+{
+    public void showf()
+    {
+        System.out.println("Father class created");
+    }
+}
+class Son extends Father
+{
+    public void shows()
+    {
+        System.out.println("Son class  created");
+    }
+}
+class Daughter extends Father
+{
+    public void showd()
+    {
+        System.out.println("Daughter class created");
+    }
+}
+public class HybridInheritance
+{
+    public static void main(String args[])
+    {
+        Daughter d=new Daughter();
+        d.showd();
+        d.showf();
+        d.showgf();
+        Son s=new Son();
+        s.shows();
+        s.showgf();
+        s.showf();
+    }
+}
+
+         
